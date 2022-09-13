@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Staatliches', cursive;
+    color: white;
+    background: rgba(150, 84, 220, .5);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 40vw;
+    margin: 50px 0 0 0;
+    border-top: 5px solid white;
+}
+
+.title{
+    font-size: 4rem;
+}
+
+.inp{
+    display: flex;
+    margin: 30px 0 0 0;
+}
+
+#inp__text{
+    border: none;
+    border-bottom: 2px solid white;
+    width: 70%;
+    height: 45px;
+    background: none;
+    padding: 0 0 0 25px;
+    color: white;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+#inp__text::placeholder{
+    color: white;
+}
+
+.inp__button{
+    width: 150px;
+    height: 45px;
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+    background: rgba(120, 660, 200, .7);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.inp__button:hover{
+    background: rgba(120, 660, 200, 1);
+}
+
+.weather-cards{
+    display: flex;
+    margin: 30px 0 0 0;
+}
+
+.weather-card{
+    width: calc(100% / 2);
+    height: 400px;
+    color: black;
+    background: white;
+    padding: 50px 20px;
+    border-radius: 30px;
+}
+
+.weather-card__city{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    color: #53627c;
+}
+
+.weather-card__city span{
+    font-size: 14px;
+    background: #ff8c00;
+    padding: 2px 10px;
+    color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    right: -45px;
+    top: 0px;
+}
+
+.weather-card__temp{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    position: relative;
+    margin: 20px 0 0 20px;
+    display: inline-block;
+}
+
+.weather-card__temp span{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10px;
+    right: -50px;
+}
+
+.weather-card__icon{
+    margin: 10px 0 0 20px;
+}
+
+.weather-card__status{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 25px;
+    color: #1e2432;
+}
+
+
+
